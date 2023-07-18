@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="index.css" />
     <title>Text to Speech</title>
   </head>
-  <body class="container mt-5 bg-success">
-    <div>
-        <h1>Image To Text</h1>
+  <body class="container mt-2" style="background-color: #141414;"> 
+    <div style="margin-top: 10%;" class="mb-0">
+        <h1 style="color: white; margin-bottom: 0;" class="mb-0">Image To Audio</h1>
     </div>
     <div class="main">
-        <p id="text"></p>
-        <div class="child">
+        <p id="text" style="display: none; color: white;" class="mb-0 mt-0">Loading</p>
+        <div class="child mt-0" style="margin-top: 0;">
             <label>
                 <input type="file" id="image" accept="image/*">
             </label>
@@ -24,9 +24,9 @@
             <button id="btn">Convert</button>
         </div>
    
-    <p class="lead text-light mt-4">Select Voice</p>
-    <select id="voices" class="form-select bg-secondary text-light"></select>
-    <div class="d-flex mt-4 text-light">
+    <p class="lead text-light mt-4" style="display: none;">Select Voice</p>
+    <select id="voices" class="form-select bg-secondary text-light" style="display: none;"></select>
+    <div class="d-flex mt-2 mb-0 text-light">
       <div>
         <p class="lead">Volume</p>
         <input type="range" min="0" max="1" value="1" step="0.1" id="volume" />
@@ -43,8 +43,8 @@
         <span id="pitch-label" class="ms-2">1</span>
       </div>
     </div>
-    <textarea id="textarea" class="form-control bg-dark text-light mt-5" cols="1" rows="1"></textarea>
-    <div class="mb-5">
+    <textarea id="textarea" class="form-control bg-dark text-light mt-3 mb-0" cols="5" rows="5"></textarea>
+    <div class="mb-5 mt-0">
       <button id="start" class="btn btn-success mt-5 me-3">Start</button>
       <button id="pause" class="btn btn-warning mt-5 me-3">Pause</button>
       <button id="resume" class="btn btn-info mt-5 me-3">Resume</button>
